@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyNFnheiPdQvWcHrjN2v/9az",
+      "authorship_tag": "ABX9TyO6iPzI081Fz90QUPyV6iqi",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -149,7 +149,7 @@
       "cell_type": "code",
       "source": [
         "#Checking the type of array\n",
-        "#nd means n imensional\n",
+        "#nd means number of dimensions\n",
         "print(type(array))\n",
         "array = array * 2\n",
         "print(array)"
@@ -169,6 +169,213 @@
           "text": [
             "<class 'numpy.ndarray'>\n",
             "[2 4 6 8]\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "from pathlib import PureWindowsPath\n",
+        "# zero dimensional array\n",
+        "array = np.array('A')\n",
+        "print(array.ndim)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kd7DDXHQo3_S",
+        "outputId": "d0351ffc-ed58-4066-9607-3882fb4b666c"
+      },
+      "execution_count": 11,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "0\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#multidimensional array\n",
+        "array = np.array([[1, 2, 3], [4, 5, 6]])\n",
+        "print(array)\n",
+        "print(array.ndim)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "HRMUNyOyrIwr",
+        "outputId": "edda4ebe-cfff-4ca4-d6b1-a14b3080d355"
+      },
+      "execution_count": 21,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[[1 2 3]\n",
+            " [4 5 6]]\n",
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "#to achieve 2d array close the matrix within another matrix and add another list\n",
+        "array = np.array([['k', 'g', 'f', 'h'],\n",
+        "                  ['a', 'b', 'c', 'd'],\n",
+        "                  ['g', 'g', 'f', 'r']])\n",
+        "print(array.ndim)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NjPfu_Iar2bA",
+        "outputId": "47fba0e0-d54f-4270-e2b4-9f1221518320"
+      },
+      "execution_count": 18,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "2\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#3D array\n"
+      ],
+      "metadata": {
+        "id": "hi7PjPOwth_-"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "#pay attention to the number of brackets\n",
+        "array = np.array([[[1, 2, 3, 4]],\n",
+        "                  [['a', 'b', 'c', 'd']],\n",
+        "                  [['g', 'g', 'f', 'r']]])\n",
+        "\n",
+        "print(array.ndim)\n",
+        "print (array.shape)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "095f8859-7efa-459d-ffea-a14c43c0cea0",
+        "id": "s4jKLdXPto45"
+      },
+      "execution_count": 23,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "(3, 1, 4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [],
+      "metadata": {
+        "id": "T_vqoI9gwL5J"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "#pay attention to the number of brackets\n",
+        "array = np.array([[[1, 2, 3, 4], ],\n",
+        "                  [['a', 'b', 'c', 'd']],\n",
+        "                  [['g', 'g', 'f', 'r']]])\n",
+        "\n",
+        "print(array.ndim)\n",
+        "print (array.shape)\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "095f8859-7efa-459d-ffea-a14c43c0cea0",
+        "id": "FEk-Ul3gwzmJ"
+      },
+      "execution_count": null,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "(3, 1, 4)\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "#when you arrange them downwards they form like a 2D matrix\n",
+        "#pay attention to the number of brackets\n",
+        "array = np.array([[[1, 2, 3, 4], [1, 2, 3, 4]],\n",
+        "                  [['a', 'b', 'c', 'd'], ['s', 'd', 't,', 'z']],\n",
+        "                  [['g', 'g', 'f', 'r'], ['t', 'f', 'g', 'p']]])\n",
+        "\n",
+        "print(array.ndim)\n",
+        "print (array.shape)\n",
+        "\n",
+        "# to get elements in our array we shall use their indices eaxample\n",
+        "#getting the first element\n",
+        "print(array[0][0][0])  #this is called chain indexing\n",
+        "\n",
+        "#Their is also multidimensional indexing\n",
+        "print(array[0, 0, 0])\n",
+        "print(array[1, 0, 2])\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "9a6ef7f2-bafb-4550-c136-c5951d43edf0",
+        "id": "_QrH8y6nw8k3"
+      },
+      "execution_count": 27,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3\n",
+            "(3, 2, 4)\n",
+            "1\n",
+            "1\n",
+            "c\n"
           ]
         }
       ]
