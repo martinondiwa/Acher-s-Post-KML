@@ -4,7 +4,7 @@
   "metadata": {
     "colab": {
       "provenance": [],
-      "authorship_tag": "ABX9TyO6iPzI081Fz90QUPyV6iqi",
+      "authorship_tag": "ABX9TyPikY3ZQ4xcEodtPji9+d3c",
       "include_colab_link": true
     },
     "kernelspec": {
@@ -344,7 +344,7 @@
         "#when you arrange them downwards they form like a 2D matrix\n",
         "#pay attention to the number of brackets\n",
         "array = np.array([[[1, 2, 3, 4], [1, 2, 3, 4]],\n",
-        "                  [['a', 'b', 'c', 'd'], ['s', 'd', 't,', 'z']],\n",
+        "                  [['a', 'b', 'c', 'd'], ['s', 'e', 't,', 'z']],\n",
         "                  [['g', 'g', 'f', 'r'], ['t', 'f', 'g', 'p']]])\n",
         "\n",
         "print(array.ndim)\n",
@@ -356,16 +356,21 @@
         "\n",
         "#Their is also multidimensional indexing\n",
         "print(array[0, 0, 0])\n",
-        "print(array[1, 0, 2])\n"
+        "print(array[1, 0, 2])\n",
+        "print(array[1, 1, 1])\n",
+        "\n",
+        "#Using string concatination to print 3 letter word from the multidimensional array\n",
+        "word = array[1, 0, 1] + array[0, 0, 1] + array[0, 0, 3]\n",
+        "print(word)\n"
       ],
       "metadata": {
         "colab": {
           "base_uri": "https://localhost:8080/"
         },
-        "outputId": "9a6ef7f2-bafb-4550-c136-c5951d43edf0",
+        "outputId": "ef37e8c0-80d8-4fac-f005-87803d1fef70",
         "id": "_QrH8y6nw8k3"
       },
-      "execution_count": 27,
+      "execution_count": 32,
       "outputs": [
         {
           "output_type": "stream",
@@ -375,7 +380,9 @@
             "(3, 2, 4)\n",
             "1\n",
             "1\n",
-            "c\n"
+            "c\n",
+            "e\n",
+            "b24\n"
           ]
         }
       ]
